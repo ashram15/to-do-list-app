@@ -1,0 +1,122 @@
+*{
+    padding:0;
+    margin:0;
+    box-sizing: border-box;
+    font-family: 'Baskervville', serif;
+}
+.container{
+    width:100%;
+    min-height:100vh;
+    background: linear-gradient(130deg,purple,blue);
+}
+
+.todo-main{
+    width:100%;
+    max-width: 540px;
+    background:white;
+    margin: 100px auto 20px;
+    padding: 40px 30px 70px;
+    border-radius: 10px;
+}
+
+.todo-main h2{
+    color: navy;
+    display:flex;
+    align-items: center;
+    margin-bottom:20px;
+}
+
+body {
+  
+  color: navy;
+  background-color: white;
+  border: 10px solid gray;
+  border-radius: 30px;
+  display:flex;
+  justify-content: space-between;
+}
+
+ul li{
+    list-style:none;
+    font-size:15px;
+    padding:18px 8px 12px 50px;
+    user-select:none;
+    cursor:pointer;
+    position:relative;
+}
+
+ul li::before{
+    content: '';
+    position:absolute;
+    height:28px;
+    width:28px;
+    border-radius:50%;
+    background-image:url(images/unselected.png);
+    background-size:cover;
+    background-position:center;
+    top:12px;
+    left:8px;
+}
+
+ul li.checked{
+    color:#555;
+    text-decoration: line-through;
+}
+
+ul li.checked::before{
+    background-image:url(images/checked.png);
+}
+
+ul li span{
+    position: absolute;
+    right:0;
+    top:5px;
+    width:40px;
+    height:40px;
+    font-size:22px;
+    color:black;
+    line-height:40px;
+    text-align:center;
+    border-radius:50%;
+}
+
+ul li span:hover{
+    background:lightgray;
+}
+
+.input{
+    display:flex;
+    align-items: center;
+    justify-content: space-between;
+    background-color: aliceblue;
+    border-radius: 30px;
+    padding-left:20px;
+    margin-bottom:25px;
+    border:none;
+    font-size:15px;
+}
+
+input{
+    flex:1;
+    border:none;
+    outline:none;
+    background:transparent;
+    padding:10px;
+    font-size:16px;
+    color:black;
+}
+
+.todo-main button{
+    padding:16px 40px;
+    border-radius: 30px;
+    font-size:15px;
+    background-color: #004aad;
+    color:linen;
+    border:none;
+    outline:none;
+
+}
+
+.todo-main button:hover{
+    background-color: lightgray;
+}
